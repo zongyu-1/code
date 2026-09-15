@@ -1,0 +1,9 @@
+si 0
+speed 4000
+device HPM6E6YXGNX
+connect
+r
+loadfile D:/AI/test/software_test/my_servo_drive/build/output/demo.elf
+setpc 0x00000000
+g
+qc
