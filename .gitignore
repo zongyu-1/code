@@ -1,0 +1,20 @@
+# CMake 构建产物
+build/
+build_*/
+cmake-build-*/
+
+# 编译中间文件
+*.o
+*.obj
+*.a
+*.elf
+*.bin
+*.map
+*.asm
+*.d
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+*~

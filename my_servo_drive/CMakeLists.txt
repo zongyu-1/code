@@ -11,6 +11,9 @@ find_package(hpm-sdk REQUIRED HINTS $ENV{HPM_SDK_BASE})
 # 3. 定义你的项目名称
 project(servo_drive_firmware)
 
+# 告诉 CMake：在配置时，请把所有头文件路径和宏定义导出到一个 JSON 文件中
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # 4. 引入底层 CBB 模块 (motor_hal)
 # 注意：如果此时 motor_hal 里完全是空的，这行会报错。
 # 请先在 components/motor_hal 下建立下面第 2 步的 CMakeLists.txt
